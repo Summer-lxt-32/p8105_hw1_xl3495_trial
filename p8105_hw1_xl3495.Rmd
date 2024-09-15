@@ -8,7 +8,7 @@ output: github_document
 data("penguins", package = "palmerpenguins")
 ```
 
-##Problem 1
+# Problem 1
 
 ```{r}
 row = nrow(penguins)
@@ -32,7 +32,7 @@ ggsave("scatter_plot.jpeg", plot = plot)
 ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species))+geom_point()
 ```
 
-##Problem 2
+# Problem 2
 
 ```{r}
 #create a data frame
@@ -65,7 +65,7 @@ df = tibble(
 
 
 ```
-#Mean of Each Variable
+## Mean of Each Variable
 ```{r}
 mean_norm_samp = mean(df %>% pull(norm_samp))
 ```
